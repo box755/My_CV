@@ -17,6 +17,8 @@ import {
   FlaskConical,
   Coins,
   Lightbulb,
+  Music,
+  Users,
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
@@ -161,6 +163,17 @@ export default function Home() {
                     <p className="text-zinc-500 text-xs">
                       國防部先進科學研究計畫
                     </p>
+                  </div>
+                </div>
+                <div className="bg-amber-500/5 border border-amber-400/20 rounded-lg p-3 flex items-start gap-3 md:col-span-2">
+                  <div className="bg-amber-500/10 rounded-full p-1.5 mt-0.5 shrink-0">
+                    <Trophy size={14} className="text-amber-400" />
+                  </div>
+                  <div>
+                    <p className="text-zinc-200 font-medium text-sm">
+                      天成醫療體系張育美董事長希望獎學金
+                    </p>
+                    <p className="text-zinc-500 text-xs">114-1 學期</p>
                   </div>
                 </div>
               </div>
@@ -443,6 +456,37 @@ export default function Home() {
               </div>
             </CardContent>
           </Card>
+        </section>
+
+        {/* Extracurricular Activities Section */}
+        <section className="space-y-4">
+          <h2 className="text-xl font-bold font-mono flex items-center">
+            <span className="text-emerald-400 mr-2">{">"}</span> 課外活動
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <Card className="bg-zinc-900 border-zinc-800">
+              <CardContent className="p-5 flex items-start gap-4">
+                <div className="bg-emerald-500/10 rounded-lg p-2 shrink-0">
+                  <Music size={20} className="text-emerald-400" />
+                </div>
+                <div>
+                  <h3 className="font-bold text-zinc-100">中央大學熱音社</h3>
+                  <p className="text-zinc-400 text-sm">鼓手 (Drummer)</p>
+                </div>
+              </CardContent>
+            </Card>
+            <Card className="bg-zinc-900 border-zinc-800">
+              <CardContent className="p-5 flex items-start gap-4">
+                <div className="bg-blue-500/10 rounded-lg p-2 shrink-0">
+                  <Users size={20} className="text-blue-400" />
+                </div>
+                <div>
+                  <h3 className="font-bold text-zinc-100">資管系學會新聞部</h3>
+                  <p className="text-zinc-400 text-sm">成員</p>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
         </section>
 
         {/* Projects Section */}
