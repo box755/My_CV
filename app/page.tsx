@@ -1,4 +1,5 @@
 import Image from "next/image"
+import profilePic from "../public/profile.jpg"
 import {
   Github,
   Linkedin,
@@ -32,7 +33,7 @@ export default function Home() {
         <section className="space-y-4">
           <div className="flex items-center gap-4">
             <Avatar className="h-20 w-20 shrink-0">
-              <AvatarImage src="/profile.jpg" alt="傅聖祐" />
+              <AvatarImage src={profilePic.src} alt="傅聖祐" />
               <AvatarFallback className="bg-gradient-to-br from-emerald-500 to-blue-600 flex items-center justify-center text-white text-2xl font-mono">
                 SY
               </AvatarFallback>
@@ -192,13 +193,12 @@ export default function Home() {
                   >
                     <span className="text-zinc-300 text-sm">{course.name}</span>
                     <span
-                      className={`font-mono font-bold text-sm ${
-                        course.score === 100
+                      className={`font-mono font-bold text-sm ${course.score === 100
                           ? "text-amber-400"
                           : course.score >= 95
                             ? "text-emerald-400"
                             : "text-blue-400"
-                      }`}
+                        }`}
                     >
                       {course.score}
                     </span>
