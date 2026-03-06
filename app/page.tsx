@@ -32,9 +32,9 @@ export default function Home() {
         {/* Header Section */}
         <section className="space-y-4">
           <div className="flex items-center gap-4">
-            <Avatar className="h-20 w-20 shrink-0">
-              <AvatarImage src={profilePic.src} alt="傅聖祐" />
-              <AvatarFallback className="bg-gradient-to-br from-emerald-500 to-blue-600 flex items-center justify-center text-white text-2xl font-mono">
+            <Avatar className="h-32 w-32 shrink-0">
+              <AvatarImage src={profilePic.src} alt="傅聖祐" className="scale-125" />
+              <AvatarFallback className="bg-gradient-to-br from-emerald-500 to-blue-600 flex items-center justify-center text-white text-4xl font-mono">
                 SY
               </AvatarFallback>
             </Avatar>
@@ -194,10 +194,10 @@ export default function Home() {
                     <span className="text-zinc-300 text-sm">{course.name}</span>
                     <span
                       className={`font-mono font-bold text-sm ${course.score === 100
-                          ? "text-amber-400"
-                          : course.score >= 95
-                            ? "text-emerald-400"
-                            : "text-blue-400"
+                        ? "text-amber-400"
+                        : course.score >= 95
+                          ? "text-emerald-400"
+                          : "text-blue-400"
                         }`}
                     >
                       {course.score}
