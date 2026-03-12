@@ -136,7 +136,7 @@ export default function Home() {
                     <p className="text-zinc-200 font-medium text-sm">
                       院長獎
                     </p>
-                    <p className="text-zinc-500 text-xs">112-2 學期</p>
+                    <p className="text-zinc-500 text-xs">112-2、113-2 學期</p>
                   </div>
                 </div>
                 <div className="bg-emerald-500/5 border border-emerald-400/20 rounded-lg p-3 flex items-start gap-3">
