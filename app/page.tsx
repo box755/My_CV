@@ -250,7 +250,7 @@ export default function Home() {
                 <div className="space-y-1">
                   <p className="text-zinc-500 text-sm">可上班日</p>
                   <p className="text-zinc-200 font-medium">
-                    2026 年 6 月 ~ 9 月
+                    2026年6月~2027年6月
                   </p>
                 </div>
                 <div className="space-y-1 md:col-span-2">
